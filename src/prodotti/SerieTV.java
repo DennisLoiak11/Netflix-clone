@@ -11,7 +11,7 @@ public class SerieTV extends Prodotto {
     public SerieTV(String titolo, int anno, Attore[] cast, Genere genere, boolean pg, boolean original,
                    int numeroStagioni, int episodiPerStagione) {
         super(titolo, anno, cast, genere, pg, original);
-        this.numeroStagioni =numeroStagioni;
+        this.numeroStagioni = numeroStagioni;
         this.episodiPerStagione = episodiPerStagione;
     }
 }

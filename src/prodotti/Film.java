@@ -17,6 +17,6 @@ public class Film extends Prodotto {
     }
 
     public void setDurata(int durata) {
-        this.durata =durata;
+        this.durata = durata;
     }
 }

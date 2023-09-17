@@ -1,6 +1,6 @@
 package enums;
 
-public enum  Genere {
+public enum Genere {
 
     GIALLO, THRILLER, HORROR, NOIR, COMMEDIA, FANTASY, DOCUMENTARIO;
 

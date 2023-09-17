@@ -9,7 +9,7 @@ public enum TipoOfferta {
 
     TipoOfferta(int nUtenti, double prezzo) {
         this.nUtenti = nUtenti;
-        this.prezzo =prezzo;
+        this.prezzo = prezzo;
     }
 
     public int getnUtenti() {

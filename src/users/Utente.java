@@ -104,7 +104,7 @@ public class Utente {
         if (isPresentInLista(p)) {
             for (int i = 0; i < ListaPreferiti.length; i++) {
                 if (ListaPreferiti[i] == p) {
-                    ListaPreferiti[i] = null;
+                    ListaPreferiti[i] =null;
                 }
             }
         }
