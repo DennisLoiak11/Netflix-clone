@@ -12,7 +12,7 @@ public class Account {
 
     public Account(String email, String password, TipoOfferta tipoOfferta) {
         this.email = email;
-        this.password = password;
+        this.password =password;
         this.tipoOfferta = tipoOfferta;
         this.utenti = new Utente[tipoOfferta.getnUtenti()];
     }

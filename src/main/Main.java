@@ -15,6 +15,5 @@ public class Main {
         Film film = new Film("Batman", 2012, new Attore[7], Genere.FANTASY, false, false, 120);
 
         u.AddInLista(film);
-        System.out.println(u.getListaPreferiti());
     }
 }

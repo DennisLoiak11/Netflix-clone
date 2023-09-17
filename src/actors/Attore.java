@@ -11,7 +11,7 @@ public class Attore {
 
     public Attore(String nome, String cognome, LocalDate dataNascita, String nazionalita) {
         this.nome = nome;
-        this.cognome = cognome;
+        this.cognome =cognome;
         this.dataNascita = dataNascita;
         this.nazionalita = nazionalita;
     }

@@ -14,7 +14,7 @@ public class Prodotto {
 
     public Prodotto(String titolo, int anno, Attore[] cast, Genere genere, boolean pg, boolean original) {
         this.titolo = titolo;
-        if (anno < 1900 || anno > 2023) {
+        if (anno < 1900 || anno >2023) {
             throw new IllegalArgumentException("anno non corretto");
         }
         this.anno = anno;

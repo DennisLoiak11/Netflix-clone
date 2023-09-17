@@ -11,7 +11,7 @@ public class Documentario extends Prodotto {
     public Documentario(String titolo, int anno, Attore[] cast, Genere genere, boolean pg, boolean original,
                         GenereDocumentario genereDocumentario) {
         super(titolo, anno, cast, genere, pg, original);
-        this.genereDocumentario = genereDocumentario;
+        this.genereDocumentario =genereDocumentario;
     }
 
     public GenereDocumentario getGenereDocumentario() {
