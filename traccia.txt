@@ -1,0 +1,42 @@
+Sfruttando le caratteristiche della OOP, creare delle classi che simulino un servizio di streaming classico.
+Prendete ispirazione da quello che conoscete meglio e sviluppate la "libreria" più adatta a contenere tutte le
+informazioni.
+
+Un esempio di alcune possibili classi (da integrare ed estendere con le informazioni mancanti):
+
+    users.Account
+        Email
+        Password
+        Tipo di Offerta
+        Utenti
+    users.Utente
+        Nome
+        Avatar
+        Tipo users.Utente (normale/kid)
+        Pin
+    prodotti.Prodotto in Catalogo
+        Titolo
+        Anno
+        Cast
+        Genere
+        PG
+        Originale
+    Film
+    Serie TV
+        Numero Stagioni
+        Numero Episodi per Stagione
+    Documentario
+
+ATTENZIONE! Alcuni degli attributi indicati potrebbero essere ricondotti ad ulteriori classi invece che a tipi più semplici. Sfruttare anche gli enum dove possibile/sensato.
+
+
+PARTE 2:
+
+    Aggiungere la funzionalità "La mia lista" che permette all'utente di memorizzare una lista personalizzata di prodotti da
+    guardare;
+
+    Aggiungere la possiblità ad un users.Utente di indicare se un prodotto gli piace o meno (si può anche decidere di fare una
+    valutazione a stelle, da 1 a 5).
+
+    Creare un metodo che, dato un genere (es. Azione, Horror, Commedia) o una categoria (prodotti.Film, Serie TV,
+    prodotti.Documentario), restituisce una lista di prodotti di quel genere o di quella categoria;
