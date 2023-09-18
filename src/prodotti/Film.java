@@ -3,6 +3,8 @@ package prodotti;
 import actors.Attore;
 import enums.Genere;
 
+import java.util.Arrays;
+
 public class Film extends Prodotto {
 
     private int durata;
@@ -18,5 +20,14 @@ public class Film extends Prodotto {
 
     public void setDurata(int durata) {
         this.durata = durata;
+    }
+
+    @Override
+    public String toString() {
+        return "Film{" +
+                "durata=" + durata +
+                ", titolo='" + titolo + '\'' +
+                ", anno=" + anno +
+                '}';
     }
 }

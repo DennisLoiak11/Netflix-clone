@@ -7,6 +7,8 @@ import prodotti.Film;
 import users.Account;
 import users.Utente;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,6 +17,6 @@ public class Main {
         Film film = new Film("Batman", 2012, new Attore[7], Genere.FANTASY, false, false, 120);
 
         u.AddInLista(film);
-        System.out.println(u.getListaPreferiti());
+        System.out.println(Arrays.toString(u.getListaPreferiti()));
     }
 }

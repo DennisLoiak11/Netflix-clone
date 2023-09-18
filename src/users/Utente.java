@@ -3,6 +3,8 @@ package users;
 import prodotti.Film;
 import prodotti.Prodotto;
 
+import java.util.Arrays;
+
 public class Utente {
 
     //attributi
@@ -16,17 +18,7 @@ public class Utente {
 
 
     //costruttore
-
-
     public Utente(String nome, String avatar, boolean isKid, String pin, Account account) {
-        this.nome = nome;
-        this.avatar = avatar;
-        this.isKid = isKid;
-        this.pin = pin;
-        this.account = account;
-    }
-
-    public Utente(String nome, String avatar, boolean isKid, String pin, Account account, Prodotto[] listaPreferiti) {
         this.nome = nome;
         this.avatar = avatar;
         this.isKid = isKid;
@@ -93,8 +85,8 @@ public class Utente {
         for(int i = 0; i < ListaPreferiti.length; i++){
             if (ListaPreferiti[i] == null) {
                 ListaPreferiti[i] = p;
-                System.out.println("sono nell'if");
                 flag = true;
+                break;
             }
         }
         if (!flag) throw new IllegalArgumentException("La tua lista è piena!");
@@ -117,6 +109,18 @@ public class Utente {
             }
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Utente{" +
+                "nome='" + nome + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", isKid=" + isKid +
+                ", pin='" + pin + '\'' +
+                ", account=" + account +
+                ", ListaPreferiti=" + Arrays.toString(ListaPreferiti) +
+                '}';
     }
 }
 
